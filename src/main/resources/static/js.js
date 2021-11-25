@@ -3,6 +3,7 @@ var client = null;
 function showMessage(newMessage) {
     var response = document.getElementById('response');
     var newResponse = document.createElement('p');
+    newResponse.classList.add('list-group-item')
     newResponse.appendChild(document.createTextNode(newMessage));
     response.appendChild(newResponse)
 
