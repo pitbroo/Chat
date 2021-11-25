@@ -1,8 +1,9 @@
 var client = null;
 
-function showMessage(parse) {
+function showMessage(newMessage) {
     var response = document.getElementById('response');
     var newResponse = document.createElement('p');
+    newResponse.appendChild(document.createTextNode(newMessage));
     response.appendChild(newResponse)
 
 }
