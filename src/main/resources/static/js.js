@@ -22,3 +22,11 @@ function sendMessage() {
     client.send("/app/chat", {}, JSON.stringify({'value': messageToSend}));
 
 }
+
+var input = document.getElementById("messageToSend");
+
+input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        sendMessage();
+    }
+});
