@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <title>Chat Vistuka</title>
 </head>
-<body>
+<body onload="connect()">
     <div>
-        <label>You message: </label><input type="text"/>
-        <button>Send</button>
+        <label>You message: </label><input id="messageToSend" type="text"/>
+        <button onclick="sendMessage()">Send</button>
+        <p id="response"></p>
     </div>
+<script src="js.js"></script>
+<script src="stopm.js"></script>
 </body>
 </html>
