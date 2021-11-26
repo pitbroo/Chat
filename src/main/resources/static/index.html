@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Chat Vistuka</title>
+    <title>Chat Vistula</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,8 +12,10 @@
         <h2>Messager</h2>
         <p id="response"></p>
         <div class="messageBox">
-            <label>You message: </label><input id="messageToSend" type="text"/>
-            <button onclick="sendMessage()">Send</button>
+            <label>User: </label>
+            <input id="user" type="text" class="col-2"/><br>
+            <label>You message: </label><input class="col-5" id="messageToSend" type="text"/>
+            <button class="btn btn-outline-success" onclick="sendMessage()">Send</button>
         </div>
     </div>
 

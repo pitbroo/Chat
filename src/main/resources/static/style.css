@@ -7,7 +7,7 @@ body {
 .messageBox {
 
     font: 17px arial, sans-serif;
-    height: 22px;
+    height: 60px;
     width: 100%;
 }
 .box{
@@ -33,4 +33,7 @@ body {
     color: dimgrey;
     background: gainsboro;
     font-size: xx-small;
+}
+h5.user {
+    font-weight: bold;
 }
