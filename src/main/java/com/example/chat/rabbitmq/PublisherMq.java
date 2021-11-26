@@ -14,7 +14,7 @@ public class PublisherMq {
 
     @GetMapping("/addMessage")
     public String get(@RequestParam String message) {
-        rabbitTemplate.convertAndSend("message", message);
+        rabbitTemplate.convertAndSend("topic", message);
         return "sent" ;
     }
 }
